@@ -1,10 +1,16 @@
 # GENERATOR-EASY
 
-This project is a Yeoman generator that is a scaffolding tool to help you kickstart new Easy extension projects
+This project is a Yeoman generator.
+Yeoman is a scaffolding tool that will help you kickstart new Easy extension projects. It is a Node.js module, and you can install it from npm.
 
 # Getting started
 
 ## Preparation
+- Install NodeJS
+- Install Yeoman
+```
+npm install -g yo
+```
 - Install [Gradle](https://gradle.org/install/)
 - Create your global gradle configuration properties file:
   - Unix/MacOS - `~/.gradle/gradle.properties`
@@ -26,17 +32,18 @@ This project is a Yeoman generator that is a scaffolding tool to help you kickst
 
 ## Generate an Easy Extension
 
-Yeoman is a scaffolding tool that will help you kickstart new Easy extension projects. It is a Node.js module, and you can install it from npm:
 
+Create a new folder for your new extension (ex: `myextension`)
 ```
-npm install -g yo
+mkdir myextension
+cd myextension
 ```
 
-After you’ve installed it, you can run Yeoman by the command yo
-
+Now, you can run Yeoman to generate the extension
 ```
 yo easy
 ```
+
 Now you can execute unit tests to validate your extension
 ```
 gradle test
