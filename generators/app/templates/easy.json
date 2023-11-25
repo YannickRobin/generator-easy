@@ -1,0 +1,23 @@
+{
+    "groupId": "<%= projectGroupId %>",
+    "id": "<%= projectId %>",
+    "name": "<%= projectId %>",
+    "version": {
+      "available": "0.0.1"
+    },
+    "easyVersion": {
+      "available": "0.3"
+    },
+    "requires": {
+      "easy" : [],
+      "commerce": []
+    },
+    "description": "<%= projectDescription %>",
+    "documentation": "",
+    "authors": [
+      "<%= projectAuthor %>"
+    ],
+    "vendor": "SAP",
+    "tags": [
+    ]
+}
