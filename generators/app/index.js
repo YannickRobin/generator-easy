@@ -13,7 +13,7 @@ module.exports = class extends Generator {
             type: "input",
             name: "projectId",
             message: "Your project name",
-            default: "helloworld" // Default to current folder name
+            default: this.appname.replace(/ /g,"-").replace(/[^a-zA-Z0-9 ]/g, '') // Default to current folder name
           },
           {
             type: "input",
