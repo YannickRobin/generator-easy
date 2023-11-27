@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.equalTo
 
 class HelloWorldControllerTest {
 
-    def baseUrl = 'https://localhost:9002/easyrest'
+    def baseUrl = 'https://localhost:9002'
 
     @Before
     void setUp() {
@@ -19,7 +19,7 @@ class HelloWorldControllerTest {
     @Test
     void test_valid_get() {
 
-        when().get("${baseUrl}/easyHelloWorld?firstname={firstname}", 'Yannick')
+        when().get("${baseUrl}/easyrest/myextension/hello?firstname={firstname}", 'Yannick')
                 .then()
                 .body(equalTo('{"message":"hello Yannick"}'))
                 .statusCode(200)
