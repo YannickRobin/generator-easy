@@ -1,2 +1,2 @@
 REMOVE EasyRest; name[unique = true]; path[unique = true]
-               ; hello    ; <%= projectId %>
+               ; hello    ; <%= projectId %>/hello
